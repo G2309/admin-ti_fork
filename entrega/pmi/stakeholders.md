@@ -71,7 +71,7 @@ La estrategia "monitorear" implica contacto únicamente ante incidencia técnica
 
 ## Mapa textual de cuadrantes
 
-```
+```bash
                         MATRIZ PODER-INTERÉS
 
      ALTO  |  CUADRANTE II              |  CUADRANTE I

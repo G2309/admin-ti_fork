@@ -86,7 +86,7 @@ Si el SPI cae por debajo de 0.90 durante dos sprints consecutivos, se activa el 
 
 La ruta crítica es la secuencia de hitos interdependientes cuyo retraso impacta directamente la fecha de entrega H7. No existe margen de holgura en ninguno de estos hitos sin comprometer H7.
 
-```
+```bash
 H1 (Inicio planificación) -> H2 (Entrega documentos) -> H3 (Inicio sprint 1) -> H4 (Validación catálogo, sprint 3) -> H5 (Motor funcional, sprint 4) -> H6 (Pruebas usabilidad, sprint 7) -> H7 (Entrega MVP, sprint 8)
 ```
 
