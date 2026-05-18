@@ -225,7 +225,7 @@ export function UvgExecutiveScene() {
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div className="rounded-md border border-border bg-card/60 px-3 py-3">
-                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Marco</p>
+                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Metodología de trabajo</p>
                       <p className="mt-1 text-base font-medium">{selected.name}</p>
                     </div>
                     <div className="rounded-md border border-border bg-card/60 px-3 py-3">
@@ -233,11 +233,11 @@ export function UvgExecutiveScene() {
                       <p className="mt-1 text-base font-medium tabular-nums">{project.sprints}</p>
                     </div>
                     <div className="rounded-md border border-border bg-card/60 px-3 py-3">
-                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Story points</p>
-                      <p className="mt-1 text-base font-medium tabular-nums">{project.storyPoints}</p>
+                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Frecuencia de entrega</p>
+                      <p className="mt-1 text-base font-medium tabular-nums">Cada 2 semanas</p>
                     </div>
                     <div className="rounded-md border border-border bg-card/60 px-3 py-3">
-                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Épicas</p>
+                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Funcionalidades</p>
                       <p className="mt-1 text-base font-medium tabular-nums">{project.epics}</p>
                     </div>
                   </div>
