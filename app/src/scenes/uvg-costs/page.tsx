@@ -29,7 +29,7 @@ export function UvgCostsScene() {
                 </div>
                 <p className="text-2xl font-semibold">{selected?.name}</p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Combinamos sprints planeados de dos semanas con un flujo continuo para atender ajustes sin frenar el avance del proyecto.
+                  Combinamos ciclos planeados de dos semanas con un flujo continuo para atender ajustes sin frenar el avance del proyecto.
                 </p>
               </div>
               <div className="md:text-right">
@@ -48,17 +48,17 @@ export function UvgCostsScene() {
             <div className="rounded-lg border border-border bg-card p-4">
               <RefreshCw size={18} className="text-emerald-600 dark:text-emerald-400" />
               <p className="text-sm font-medium mt-2">Ajustes sin frenar el avance</p>
-              <p className="text-xs text-muted-foreground mt-1">Cada sprint absorbe una porción de cambios y soporte sin renegociar el plan.</p>
+              <p className="text-xs text-muted-foreground mt-1">Cada ciclo absorbe una porción de cambios y soporte sin renegociar el plan.</p>
             </div>
             <div className="rounded-lg border border-border bg-card p-4">
               <Clock size={18} className="text-emerald-600 dark:text-emerald-400" />
               <p className="text-sm font-medium mt-2">Entregas verificables cada dos semanas</p>
-              <p className="text-xs text-muted-foreground mt-1">Resultados tangibles al final de cada sprint, no al final del proyecto.</p>
+              <p className="text-xs text-muted-foreground mt-1">Resultados tangibles al final de cada ciclo, no al final del proyecto.</p>
             </div>
             <div className="rounded-lg border border-border bg-card p-4">
               <Wallet size={18} className="text-emerald-600 dark:text-emerald-400" />
-              <p className="text-sm font-medium mt-2">Soporte incluido en cada sprint</p>
-              <p className="text-xs text-muted-foreground mt-1">Cada sprint reserva un 20 % de capacidad para ajustes y soporte sin costo extra.</p>
+              <p className="text-sm font-medium mt-2">Soporte incluido en cada ciclo</p>
+              <p className="text-xs text-muted-foreground mt-1">Cada ciclo reserva un 20 % de capacidad para ajustes y soporte sin costo extra.</p>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ export function UvgCostsScene() {
                 <ShieldCheck size={16} className="text-emerald-600 dark:text-emerald-400" />
                 Acuerdo de servicio
               </CardTitle>
-              <p className="text-xs text-muted-foreground">Compromisos contractuales que protegen su inversión durante los ocho sprints del proyecto.</p>
+              <p className="text-xs text-muted-foreground">Compromisos contractuales que protegen su inversión durante los ocho ciclos del proyecto.</p>
             </CardHeader>
             <CardContent className="space-y-5">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -89,7 +89,7 @@ export function UvgCostsScene() {
                 </div>
                 <div className="rounded-md border border-border bg-card/60 p-3">
                   <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Capacidad para ajustes</p>
-                  <p className="mt-1 text-lg font-semibold">20 % por sprint</p>
+                  <p className="mt-1 text-lg font-semibold">20 % por ciclo </p>
                   <p className="text-[11px] text-muted-foreground mt-0.5">Soporte y correcciones incluidas.</p>
                 </div>
               </div>
@@ -97,11 +97,11 @@ export function UvgCostsScene() {
               <div className="rounded-lg border border-amber-500/40 bg-amber-500/5 p-4">
                 <p className="text-sm font-medium">Importante sobre el costo</p>
                 <p className="text-xs text-muted-foreground mt-1">
-                  La inversión base cubre el alcance comprometido y un 20 % de capacidad por sprint para ajustes y soporte. Las solicitudes que excedan ese margen tienen un cargo adicional:
+                  La inversión base cubre el alcance comprometido y un 20 % de capacidad por ciclo para ajustes y soporte. Las solicitudes que excedan ese margen tienen un cargo adicional:
                 </p>
                 <ul className="mt-2 space-y-1.5 text-xs">
                   <li className="flex items-baseline justify-between gap-3 border-b border-border/40 pb-1.5">
-                    <span>Solicitud adicional fuera del margen de soporte del sprint</span>
+                    <span>Solicitud adicional fuera del margen de soporte del ciclo </span>
                     <span className="font-semibold tabular-nums whitespace-nowrap">Q 3,000.00 por solicitud</span>
                   </li>
                   <li className="flex items-baseline justify-between gap-3">
@@ -117,14 +117,14 @@ export function UvgCostsScene() {
               <div className="rounded-lg border border-rose-500/40 bg-rose-500/5 p-4">
                 <p className="text-sm font-medium">Si nosotros incumplimos</p>
                 <p className="text-xs text-muted-foreground mt-1">
-                  Penalización del 5 % del valor total del contrato por cada sprint de retraso atribuible a Strategic IT Project Solutions.
+                  Penalización del 5 % del valor total del contrato por cada ciclo de retraso atribuible a Strategic IT Project Solutions.
                 </p>
               </div>
 
               <div className="rounded-lg border border-border bg-muted/20 p-4">
                 <p className="text-sm font-medium">Forma de pago</p>
                 <p className="text-xs text-muted-foreground mt-1">
-                  Esquema 30 / 40 / 30: 30 % al inicio del proyecto, 40 % al cierre del sprint medio (validación parcial) y 30 % en la entrega final. Plazo: cinco días hábiles después de cada hito.
+                  Esquema 30 / 40 / 30: 30 % al inicio del proyecto, 40 % al cierre del ciclo medio (validación parcial) y 30 % en la entrega final. Plazo: cinco días hábiles después de cada hito.
                 </p>
               </div>
             </CardContent>
@@ -140,7 +140,7 @@ export function UvgCostsScene() {
                 {methodologies.map((m) => {
                   const isSelected = m.id === selectedMethodology
                   const pros: Record<string, { protection: string; speed: string; risk: string }> = {
-                    scrum: { protection: 'Limitada', speed: 'Buena', risk: 'Cambios fuera de sprint quedan pendientes' },
+                    scrum: { protection: 'Limitada', speed: 'Buena', risk: 'Cambios fuera de ciclo quedan pendientes' },
                     kanban: { protection: 'Alta para soporte', speed: 'Sin fechas fijas', risk: 'Sin compromiso de cierre' },
                     scrumban: { protection: 'Alta', speed: 'Buena', risk: 'Equilibrado sin prácticas técnicas' },
                     'scrumban-xp': { protection: 'Alta', speed: 'Muy buena', risk: 'Equilibrio óptimo · holgura reducida 10 %' },
@@ -207,17 +207,17 @@ export function UvgCostsScene() {
           <Card className="overflow-hidden">
             <CardHeader className="pb-3">
               <CardTitle className="text-base flex items-center gap-2">
-                <CreditCard size={16} /> Esquema de pagos y plan de inversión por sprint
+                <CreditCard size={16} /> Esquema de pagos y plan de inversión por ciclo
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div>
                 {(() => {
                   const milestones: Record<string, { date: string; milestone: string }> = {
-                    Inicio: { date: '1 de enero de 2027', milestone: 'Firma de contrato · arranque Sprint 1' },
-                    Medio: { date: '25 de febrero de 2027', milestone: 'Cierre Sprint 4 · punto medio del proyecto' },
-                    Cierre: { date: '22 de abril de 2027', milestone: 'Entrega del MVP · Acta de Cierre (cierre Sprint 8)' },
-                    Final: { date: '22 de abril de 2027', milestone: 'Entrega del MVP · Acta de Cierre (cierre Sprint 8)' },
+                    Inicio: { date: '1 de enero de 2027', milestone: 'Firma de contrato · arranque ciclo 1' },
+                    Medio: { date: '25 de febrero de 2027', milestone: 'Cierre ciclo 4 · punto medio del proyecto' },
+                    Cierre: { date: '22 de abril de 2027', milestone: 'Entrega del MVP · Acta de Cierre (cierre ciclo 8)' },
+                    Final: { date: '22 de abril de 2027', milestone: 'Entrega del MVP · Acta de Cierre (cierre ciclo 8)' },
                   }
                   return (
                     <Table>
@@ -253,7 +253,7 @@ export function UvgCostsScene() {
                 })()}
               </div>
               <div>
-                <p className="text-[11px] uppercase tracking-wide text-muted-foreground mb-2">Inversión acumulada planificada por sprint</p>
+                <p className="text-[11px] uppercase tracking-wide text-muted-foreground mb-2">Inversión acumulada planificada por ciclo</p>
                 <div className="h-64">
                   <ResponsiveContainer width="100%" height="100%">
                     <AreaChart data={evmPlan} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
@@ -294,7 +294,7 @@ export function UvgCostsScene() {
                 const fmtPctVal = (n: number, d: number) => d > 0 ? `${((n / d) * 100).toFixed(1)} %` : '0 %'
 
                 const investmentParts = [
-                  { name: 'Costo equipo', value: team, color: '#64748b', desc: 'Sueldos del equipo XP por 8 sprints' },
+                  { name: 'Costo equipo', value: team, color: '#64748b', desc: 'Sueldos del equipo XP por 8 ciclos' },
                   { name: 'Adicionales', value: add, color: '#94a3b8', desc: 'Licencias, infra y soporte (6 meses)' },
                   { name: 'Reserva', value: res, color: '#334155', desc: 'Σ EMV: contingencia de riesgos' },
                 ]
