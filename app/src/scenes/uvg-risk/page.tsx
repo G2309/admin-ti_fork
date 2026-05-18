@@ -9,8 +9,8 @@ const probLabels = { 0.2: 'Baja', 0.4: 'Media', 0.7: 'Alta' } as const
 const probRows = [0.7, 0.4, 0.2] as const
 const impactCols = [
   { key: 'low', label: 'Bajo', range: (i: number) => i < 33606 },
-  { key: 'med', label: 'Medio', range: (i: number) => i >= 33606 && i < 67212 },
-  { key: 'high', label: 'Alto', range: (i: number) => i >= 67212 && i < 100818 },
+  { key: 'med', label: 'Medio', range: (i: number) => i >= 33606 && i < 67808 },
+  { key: 'high', label: 'Alto', range: (i: number) => i >= 67808 && i < 100818 },
   { key: 'crit', label: 'Crítico', range: (i: number) => i >= 100818 },
 ] as const
 
