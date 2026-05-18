@@ -6,10 +6,10 @@ import { project, financials, epics, methodologies, additionalCosts, fmtQ, fmtPc
 import { appConfig, cardVisible } from '@/lib/env'
 
 const teamByRole = [
-  { role: 'Coach (PO + XP)', count: 1, focus: 'Refinamiento del backlog, priorización, validación de entregables y coaching técnico XP.' },
-  { role: 'Tracker / Tester (SM + XP)', count: 1, focus: 'Facilitación de ceremonias, gestión de impedimentos y trazabilidad de pruebas (TDD).' },
-  { role: 'Developer Senior', count: 2, focus: 'Arquitectura, integraciones y pair programming con devs junior.' },
-  { role: 'Developer Junior', count: 2, focus: 'Implementación de historias bajo pair programming y prácticas XP.' },
+  { role: 'Líder del proyecto', count: 1, focus: 'Refinamiento del backlog, priorización, validación de entregables y coaching técnico XP.' },
+  { role: 'Coordninador', count: 1, focus: 'Facilitación de ceremonias, gestión de impedimentos y trazabilidad de pruebas (TDD).' },
+  { role: 'Programador Senior', count: 2, focus: 'Arquitectura, integraciones y pair programming con programadores junior.' },
+  { role: 'Programador Junior', count: 2, focus: 'Implementación de historias bajo pair programming y prácticas XP.' },
 ] as const
 
 const monthMap: Record<string, string> = {
@@ -106,7 +106,7 @@ export function UvgExecutiveScene() {
                     <p className="text-[10px] uppercase tracking-wide text-muted-foreground font-medium">Composición de la inversión</p>
                     <div className="space-y-1.5 text-sm">
                       <div className="flex justify-between items-baseline">
-                        <span className="text-muted-foreground">Costo equipo (8 sprints con buffer)</span>
+                        <span className="text-muted-foreground">Costo equipo (8 ciclos con buffer)</span>
                         <span className="font-mono tabular-nums">{fmtQ(teamCost)}</span>
                       </div>
                       <div className="flex justify-between items-baseline">
@@ -229,7 +229,7 @@ export function UvgExecutiveScene() {
                       <p className="mt-1 text-base font-medium">{selected.name}</p>
                     </div>
                     <div className="rounded-md border border-border bg-card/60 px-3 py-3">
-                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Sprints</p>
+                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Ciclos</p>
                       <p className="mt-1 text-base font-medium tabular-nums">{project.sprints}</p>
                     </div>
                     <div className="rounded-md border border-border bg-card/60 px-3 py-3">
@@ -278,9 +278,9 @@ export function UvgExecutiveScene() {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               {[
-                { phase: 'Anticipo', pct: 30, amount: 244200, milestone: 'Firma de contrato · arranque Sprint 1', date: '1 de enero de 2027', anchor: 'Inicio' },
-                { phase: 'Avance', pct: 40, amount: 325600, milestone: 'Cierre Sprint 4 · punto medio del proyecto', date: '25 de febrero de 2027', anchor: 'Medio' },
-                { phase: 'Cierre', pct: 30, amount: 244200, milestone: 'Entrega del MVP · Acta de Cierre (cierre Sprint 8)', date: '22 de abril de 2027', anchor: 'Final' },
+                { phase: 'Anticipo', pct: 30, amount: 244200, milestone: 'Firma de contrato · arranque Ciclo 1', date: '1 de enero de 2027', anchor: 'Inicio' },
+                { phase: 'Avance', pct: 40, amount: 325600, milestone: 'Cierre Ciclo 4 · punto medio del proyecto', date: '25 de febrero de 2027', anchor: 'Medio' },
+                { phase: 'Cierre', pct: 30, amount: 244200, milestone: 'Entrega del MVP · Acta de Cierre (cierre Ciclo 8)', date: '22 de abril de 2027', anchor: 'Final' },
               ].map((p) => (
                 <div key={p.phase} className="rounded-lg border border-border bg-card/60 p-4 space-y-2">
                   <div className="flex items-baseline justify-between gap-2">
