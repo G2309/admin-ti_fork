@@ -304,7 +304,7 @@ export function UvgExecutiveScene() {
       {cardVisible('overview.epics') && (
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle className="text-base">Épicas del producto</CardTitle>
+            <CardTitle className="text-base">Funcionalidades del producto</CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {epics.map((ep) => (
@@ -313,15 +313,9 @@ export function UvgExecutiveScene() {
                 className="relative rounded-md border border-border bg-card/60 p-4 transition-all hover:shadow-md"
               >
                 <div className="absolute inset-x-0 top-0 h-1 rounded-t-md" style={{ background: ep.color }} />
-                <div className="flex items-baseline justify-between gap-2 pt-1">
-                  <p className="text-[10px] font-mono text-muted-foreground">{ep.id}</p>
-                  <span className="text-[10px] text-muted-foreground tabular-nums">S{ep.sprints[0]}{ep.sprints.length > 1 ? `–S${ep.sprints[ep.sprints.length - 1]}` : ''}</span>
-                </div>
                 <p className="mt-1 text-sm font-medium leading-tight">{ep.name}</p>
                 <p className="mt-1 text-[11px] text-muted-foreground leading-snug">{ep.summary}</p>
                 <div className="mt-2 flex flex-wrap gap-1.5 text-[10px] text-muted-foreground">
-                  <Badge variant="outline" className="tabular-nums">{ep.stories} HU</Badge>
-                  <Badge variant="outline" className="tabular-nums">{ep.sp} SP</Badge>
                   <Badge variant="outline" className="tabular-nums">{ep.tasks} tareas</Badge>
                 </div>
               </div>
