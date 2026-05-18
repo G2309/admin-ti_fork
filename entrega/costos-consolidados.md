@@ -4,6 +4,7 @@ Valores del modelo financiero para las cuatro metodologías evaluadas. Los monto
 
 Fuente: `knowledge/proyecto/costos/UVG-Admon-TI-Costos-Unificado.xlsx` — hoja Inputs, hojas de metodología, hoja Riesgos y hoja Costos adicionales.
 
+
 ## Equipo del proyecto
 
 ### Scrum / Kanban / Scrumban (5 personas)
@@ -33,6 +34,7 @@ El FTE del Product Owner en vista interna es 0.7 (dedicación real parcial al pr
 
 XP + Scrumban agrega dos developers junior y renombra los roles de liderazgo (Coach, Tracker/Tester) para alinearlos con la terminología XP.
 
+
 ## Costos adicionales
 
 ### 6 meses (Scrum, Scrumban, XP + Scrumban)
@@ -61,6 +63,7 @@ XP + Scrumban agrega dos developers junior y renombra los roles de liderazgo (Co
 | Infraestructura cloud (12 meses) | 2,400 |
 | **Total 12 meses** | **160,740** |
 
+
 ## Riesgos y reserva de contingencia
 
 ### Escala de probabilidades
@@ -87,6 +90,7 @@ XP + Scrumban agrega dos developers junior y renombra los roles de liderazgo (Co
 | | **Reserva de contingencia ($\Sigma$ EMV)** | | | | | **124,342.20** | |
 
 El impacto económico de cada riesgo se calcula como: `Burn rate mensual (Q 67,212) * Impacto en meses`.
+
 
 ## Presupuesto por metodología
 
@@ -163,14 +167,15 @@ El impacto económico de cada riesgo se calcula como: `Burn rate mensual (Q 67,2
 | Costo equipo sin buffer (7 sprints) | 253,078.00 | 237,328.00 |
 | Costo equipo con buffer (8 sprints) | 289,232.00 | 271,232.00 |
 | (+) Costos adicionales (6 meses) | 105,870.00 | 105,870.00 |
-| (+) Reserva de riesgos ($\Sigma$ EMV) | 124,342.20 | 124,342.20 |
-| **(=) Inversión total** | **519,444.20** | **501,444.20** |
+| (+) Reserva de riesgos ($\Sigma$ EMV) | 133,769.80 | 133,769.80 |
+| **(=) Inversión total** | **528,871.80** | **510,871.80** |
 | Margen de ganancia | 35% | 35% |
-| **Precio cliente redondeado** | **800,000.00** | — |
-| Beneficio neto | 279,700.72 | — |
-| **ROI** | **53.85%** | — |
+| **Precio cliente redondeado** | **814,000.00** | — |
+| Beneficio neto | 285,128.20 | — |
+| **ROI** | **53.91%** | — |
 
 La holgura de 10% en XP + Scrumban (vs 25% en las demás metodologías) se justifica porque las prácticas XP (TDD, CI, Pair Programming) reducen la incertidumbre de ejecución. Un sprint con CI activo y cobertura de pruebas detecta defectos en horas, no en semanas, haciendo el ritmo de entrega más predecible.
+
 
 ## Comparativo de las cuatro metodologías
 
@@ -178,10 +183,11 @@ La holgura de 10% en XP + Scrumban (vs 25% en las demás metodologías) se justi
 |---|---|---:|---:|---:|---:|
 | Scrum | 9 sprints / ~4.5 meses | 5 | 532,666.20 | 820,000 | 53.85% |
 | Scrumban | 9 sprints / ~4.5 meses | 5 | 532,666.20 | 820,000 | 53.85% |
-| XP + Scrumban | 8 sprints / ~4 meses | 6 | 519,444.20 | 800,000 | 53.85% |
+| XP + Scrumban | 8 sprints / ~4 meses | 6 | 528,871.80 | 814,000 | 53.91% |
 | Kanban | 11 meses | 5 | 1,024,414.20 | 1,577,000 | 53.85% |
 
 Kanban es la metodología de mayor costo por su duración de 11 meses procesando 133 tareas técnicas con un throughput de 0.78 tareas/día. Scrum y Scrumban tienen inversión idéntica porque comparten la misma estructura de sprints, equipo y costos adicionales; la diferencia entre ambas es operativa (gestión de flujo ROM), no financiera.
+
 
 ## TMAR y validación de viabilidad
 
@@ -193,6 +199,7 @@ Kanban es la metodología de mayor costo por su duración de 11 meses procesando
 | **TMAR** | **35%** |
 
 Validación: **ROI (53.85%) > TMAR (35%)** para las cuatro metodologías $\to$ proyecto financieramente viable.
+
 
 ## ROA (empresa proveedora)
 
@@ -212,13 +219,14 @@ ROA = Utilidad neta / Total activos = Utilidad neta / Q 500,000
 
 El ROA se calcula sobre la empresa proveedora, no por proyecto. Un proyecto con margen del 35% contribuye positivamente al ROA corporativo.
 
+
 ## Esquema de pagos 30/40/30
 
 | Metodología | Precio cliente (Q) | Cuota inicio 30% (Q) | Cuota medio 40% (Q) | Cuota cierre 30% (Q) |
 |---|---:|---:|---:|---:|
 | Scrum | 820,000 | 246,000 | 328,000 | 246,000 |
 | Scrumban | 820,000 | 246,000 | 328,000 | 246,000 |
-| XP + Scrumban | 800,000 | 240,000 | 320,000 | 240,000 |
+| XP + Scrumban | 814,000 | 244,200 | 325,600 | 244,200 |
 | Kanban | 1,577,000 | 473,100 | 630,800 | 473,100 |
 
 - Cuota inicio: firma del contrato y arranque del Sprint 1 (1 ene 2027)
