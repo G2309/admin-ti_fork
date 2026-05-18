@@ -1,0 +1,174 @@
+[
+  { "id": "HT-01", "story": null, "name": "Setup CI/CD", "sprint": 1, "lane": "release", "type": "técnica", "days": 5 },
+  { "id": "HT-02", "story": null, "name": "Cobertura mínima TDD 70 %", "sprint": 1, "lane": "tdd", "type": "técnica", "days": 5 },
+  { "id": "HT-03", "story": null, "name": "Lineamientos de pair programming", "sprint": 2, "lane": "pair", "type": "técnica", "days": 3 },
+  { "id": "HT-04", "story": null, "name": "Refactor continuo · deuda técnica", "sprint": 4, "lane": "refactor", "type": "técnica", "days": 4 },
+  { "id": "HT-05", "story": null, "name": "Pipelines de release pequeño", "sprint": 5, "lane": "release", "type": "técnica", "days": 4 },
+  { "id": "HT-06", "story": null, "name": "Code review estructurado", "sprint": 6, "lane": "review", "type": "técnica", "days": 3 },
+  { "id": "HT-07", "story": null, "name": "Hardening y observabilidad", "sprint": 8, "lane": "release", "type": "técnica", "days": 5 },
+
+  { "id": "T-001", "story": "EP01-US01", "name": "Crear tabla de usuarios en base de datos", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-002", "story": "EP01-US01", "name": "Crear endpoint para registro de usuario", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-003", "story": "EP01-US01", "name": "Implementar hashing seguro de contraseña", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-004", "story": "EP01-US01", "name": "Diseñar pantalla de registro", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-005", "story": "EP01-US01", "name": "Implementar formulario de registro con validaciones", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-006", "story": "EP01-US01", "name": "Implementar pantalla de confirmación de registro exitoso", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+
+  { "id": "T-007", "story": "EP01-US02", "name": "Crear tabla de perfil académico en base de datos", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-008", "story": "EP01-US02", "name": "Crear endpoints para guardar y actualizar información académica", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-009", "story": "EP01-US02", "name": "Implementar validaciones de campos del perfil académico", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-010", "story": "EP01-US02", "name": "Diseñar sección de perfil académico", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-011", "story": "EP01-US02", "name": "Implementar formulario de perfil académico con validaciones", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-012", "story": "EP01-US03", "name": "Crear tabla de experiencias en base de datos", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-013", "story": "EP01-US03", "name": "Crear endpoints para gestión de experiencias", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-014", "story": "EP01-US03", "name": "Implementar validaciones para tipo y campos de experiencia", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-015", "story": "EP01-US03", "name": "Diseñar componente de lista dinámica de experiencias", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-016", "story": "EP01-US03", "name": "Implementar formulario para agregar nueva experiencia", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-017", "story": "EP01-US03", "name": "Implementar acciones de edición y eliminación de experiencias", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-018", "story": "EP01-US04", "name": "Verificar funcionamiento de endpoints de actualización por sección", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-019", "story": "EP01-US04", "name": "Implementar modo edición con pre-carga de datos actuales", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-020", "story": "EP01-US04", "name": "Implementar confirmación visual tras guardar cambios", "sprint": 1, "lane": "backlog", "type": "funcional", "days": 4 },
+
+  { "id": "T-021", "story": "EP01-US05", "name": "Implementar lógica de validación de campos obligatorios", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-022", "story": "EP01-US05", "name": "Implementar indicadores visuales de error por campo", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-023", "story": "EP01-US05", "name": "Implementar bloqueo del botón de guardado con campos incompletos", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 4 },
+
+  { "id": "T-024", "story": "EP01-US06", "name": "Crear endpoint para obtener resumen consolidado del perfil", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-025", "story": "EP01-US06", "name": "Implementar cálculo de indicador de completitud del perfil", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-026", "story": "EP01-US06", "name": "Diseñar vista de resumen del perfil", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-027", "story": "EP01-US06", "name": "Implementar vista de resumen con estado por sección", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-028", "story": "EP01-US06", "name": "Implementar accesos directos de edición desde el resumen", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 4 },
+
+  { "id": "T-029", "story": "EP02-US01", "name": "Crear tabla de encuestas en base de datos", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-030", "story": "EP02-US01", "name": "Crear tabla de secciones de encuesta en base de datos", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-031", "story": "EP02-US01", "name": "Crear endpoint para obtener la encuesta con sus secciones", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-032", "story": "EP02-US01", "name": "Validar acceso solo a usuarios con perfil completo", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-033", "story": "EP02-US01", "name": "Diseñar pantalla principal de la encuesta", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-034", "story": "EP02-US01", "name": "Implementar carga y visualización de la encuesta por secciones", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-035", "story": "EP02-US02", "name": "Diseñar componente de navegación entre secciones", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-036", "story": "EP02-US02", "name": "Implementar barra de progreso dinámica", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-037", "story": "EP02-US02", "name": "Implementar visualización de preguntas por sección", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-038", "story": "EP02-US02", "name": "Implementar diseño responsivo de la encuesta", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 6 },
+
+  { "id": "T-039", "story": "EP02-US03", "name": "Detectar preguntas sin responder", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-040", "story": "EP02-US03", "name": "Indicadores visuales en preguntas pendientes", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-041", "story": "EP02-US03", "name": "Bloqueo de avance con preguntas sin responder", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-042", "story": "EP02-US03", "name": "Navegación directa a preguntas pendientes", "sprint": 2, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-043", "story": "EP02-US04", "name": "Crear tabla de respuestas en base de datos", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-044", "story": "EP02-US04", "name": "Endpoint para guardar respuestas parciales", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-045", "story": "EP02-US04", "name": "Endpoint para recuperar progreso guardado", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-046", "story": "EP02-US04", "name": "Guardado automático entre secciones", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 6 },
+  { "id": "T-047", "story": "EP02-US04", "name": "Indicador visual de guardado automático", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-048", "story": "EP02-US04", "name": "Recuperación del progreso al reingresar", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 6 },
+
+  { "id": "T-049", "story": "EP02-US05", "name": "Diseñar pantalla de resumen previo al envío", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-050", "story": "EP02-US05", "name": "Vista de resumen con todas las respuestas", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-051", "story": "EP02-US05", "name": "Navegación de retorno a cualquier sección desde el resumen", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-052", "story": "EP02-US05", "name": "Guardado de cambios desde el resumen", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-053", "story": "EP02-US06", "name": "Endpoint para envío definitivo de la encuesta", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-054", "story": "EP02-US06", "name": "Lógica de bloqueo para evitar reenvíos", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-055", "story": "EP02-US06", "name": "Pantalla de confirmación de envío exitoso", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-056", "story": "EP02-US06", "name": "Notificación o correo de confirmación al estudiante", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 6 },
+
+  { "id": "T-057", "story": "EP03-US01", "name": "Crear tabla de carreras en base de datos", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-058", "story": "EP03-US01", "name": "Endpoint para registrar una carrera", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-059", "story": "EP03-US01", "name": "Validación de carreras duplicadas", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-060", "story": "EP03-US01", "name": "Diseñar pantalla de registro de carrera (admin)", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-061", "story": "EP03-US01", "name": "Formulario de registro de carrera con validaciones", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-062", "story": "EP03-US02", "name": "Tabla de áreas de conocimiento", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-063", "story": "EP03-US02", "name": "Tabla de relación carrera-área", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-064", "story": "EP03-US02", "name": "Endpoint para asignar áreas a una carrera", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-065", "story": "EP03-US02", "name": "Validación de al menos un área asignada", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-066", "story": "EP03-US02", "name": "Selector múltiple de áreas en formulario", "sprint": 3, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-067", "story": "EP03-US03", "name": "Endpoint para actualizar carrera", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-068", "story": "EP03-US03", "name": "Modo edición con pre-carga de datos", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-069", "story": "EP03-US03", "name": "Confirmación visual tras guardar", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+
+  { "id": "T-070", "story": "EP03-US04", "name": "Endpoint para listado de carreras", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-071", "story": "EP03-US04", "name": "Búsqueda por nombre y área", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-072", "story": "EP03-US04", "name": "Diseñar pantalla de listado", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-073", "story": "EP03-US04", "name": "Vista de listado con buscador", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-074", "story": "EP03-US05", "name": "Endpoint para detalle de carrera", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-075", "story": "EP03-US05", "name": "Diseñar pantalla de detalle", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-076", "story": "EP03-US05", "name": "Vista de detalle con retorno al listado", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+
+  { "id": "T-077", "story": "EP03-US06", "name": "Tabla de habilidades", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-078", "story": "EP03-US06", "name": "Tabla de intereses", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-079", "story": "EP03-US06", "name": "Tablas de relación carrera-habilidad y carrera-interés", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-080", "story": "EP03-US06", "name": "Endpoint para asociar habilidades e intereses", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-081", "story": "EP03-US06", "name": "Validación de al menos una habilidad o interés", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-082", "story": "EP03-US06", "name": "Selector múltiple de habilidades e intereses", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-083", "story": "EP03-US06", "name": "Asociar habilidades e intereses desde el formulario", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 6 },
+
+  { "id": "T-084", "story": "EP03-US07", "name": "Índices y relaciones para optimizar consultas", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 6 },
+  { "id": "T-085", "story": "EP03-US07", "name": "Manejo de errores y recuperación ante fallos", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 6 },
+  { "id": "T-086", "story": "EP03-US07", "name": "Pruebas de carga para tiempos de respuesta", "sprint": 4, "lane": "backlog", "type": "funcional", "days": 7 },
+
+  { "id": "T-087", "story": "EP04-US01", "name": "Motor de recomendación basado en reglas y clasificación", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 10 },
+  { "id": "T-088", "story": "EP04-US01", "name": "Mecanismos de recuperación ante fallos", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 7 },
+  { "id": "T-089", "story": "EP04-US01", "name": "Validar recomendaciones correctas según perfil", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 7 },
+  { "id": "T-090", "story": "EP04-US01", "name": "Interfaz con barra de progreso para el análisis", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 4 },
+
+  { "id": "T-091", "story": "EP04-US02", "name": "Algoritmo de comparación perfil-carrera", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 9 },
+  { "id": "T-092", "story": "EP04-US02", "name": "Determinismo del motor ante mismos datos", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 7 },
+  { "id": "T-093", "story": "EP04-US02", "name": "Casos de prueba con perfiles idénticos y similares", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 7 },
+
+  { "id": "T-094", "story": "EP04-US03", "name": "Definir condiciones mínimas de perfil", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-095", "story": "EP04-US03", "name": "Validar perfil antes de ejecutar el motor", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 6 },
+  { "id": "T-096", "story": "EP04-US03", "name": "Interfaz de error al no encontrar coincidencias", "sprint": 5, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-097", "story": "EP05-US01", "name": "Función de cálculo de afinidad por carrera", "sprint": 6, "lane": "backlog", "type": "funcional", "days": 9 },
+  { "id": "T-098", "story": "EP05-US01", "name": "Ordenamiento descendente de la lista de carreras", "sprint": 6, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-099", "story": "EP05-US03", "name": "Validar 2 perfiles idénticos tras nuevos umbrales", "sprint": 6, "lane": "backlog", "type": "funcional", "days": 7 },
+  { "id": "T-100", "story": "EP05-US03", "name": "Endpoint de validación de umbrales", "sprint": 6, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-101", "story": "EP05-US03", "name": "Interfaz de impacto del cambio de umbrales", "sprint": 6, "lane": "backlog", "type": "funcional", "days": 6 },
+  { "id": "T-102", "story": "EP05-US03", "name": "Botón de revertir cambios a versión estable", "sprint": 6, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-103", "story": "EP05-US02", "name": "Tabla de configuración de umbrales", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-104", "story": "EP05-US02", "name": "Lectura dinámica de umbrales en el clasificador", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 7 },
+  { "id": "T-105", "story": "EP05-US02", "name": "Validar coherencia de umbrales", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 6 },
+  { "id": "T-106", "story": "EP05-US02", "name": "Interfaz admin para cambiar umbrales", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-107", "story": "EP05-US02", "name": "Endpoint para guardar umbrales definidos", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-108", "story": "EP05-US04", "name": "Tabla de configuración con fecha, versión y métrica", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-109", "story": "EP05-US04", "name": "Endpoint para consultar umbrales", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-110", "story": "EP05-US04", "name": "Interfaz de historial de umbrales", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-111", "story": "EP05-US04", "name": "Métrica de distribución por nivel de afinidad", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 9 },
+
+  { "id": "T-112", "story": "EP06-US01", "name": "Tabla de listado de carreras por usuario", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-113", "story": "EP06-US01", "name": "Endpoint para mostrar resultados del algoritmo", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-114", "story": "EP06-US01", "name": "Interfaz de carreras relacionadas con el perfil", "sprint": 7, "lane": "backlog", "type": "funcional", "days": 5 },
+
+  { "id": "T-115", "story": "EP06-US02", "name": "Función que consulta el resultado del algoritmo", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 7 },
+  { "id": "T-116", "story": "EP06-US02", "name": "Endpoint que expone los resultados", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-117", "story": "EP06-US02", "name": "Interfaz con nivel de afinidad y motivos", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 6 },
+
+  { "id": "T-118", "story": "EP06-US03", "name": "Endpoint con información de cada carrera", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-119", "story": "EP06-US03", "name": "Interfaz con información de las carreras", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-120", "story": "EP06-US03", "name": "Descripción y metas de la carrera", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-121", "story": "EP06-US03", "name": "Aptitudes necesarias para la carrera", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-122", "story": "EP06-US03", "name": "Pensum de la carrera", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 4 },
+  { "id": "T-123", "story": "EP06-US03", "name": "Campo laboral", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 4 },
+
+  { "id": "T-124", "story": "EP06-US04", "name": "Base de datos en grafos para carreras y relaciones", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 10 },
+  { "id": "T-125", "story": "EP06-US04", "name": "Endpoint de carreras relacionadas con justificación", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 9 },
+  { "id": "T-126", "story": "EP06-US04", "name": "Interfaz sección 'Carreras relacionadas'", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 7 },
+
+  { "id": "T-127", "story": "EP06-US05", "name": "Consultas de estadísticas por carrera", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 6 },
+  { "id": "T-128", "story": "EP06-US05", "name": "Endpoint de estadísticas por carrera", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-129", "story": "EP06-US05", "name": "Interfaz admin de métricas (recomendaciones, afinidad)", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 7 },
+
+  { "id": "T-130", "story": "EP06-US06", "name": "Función que obtiene perfiles asociados a cada carrera", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 6 },
+  { "id": "T-131", "story": "EP06-US06", "name": "Endpoint para consultar perfiles relacionados", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 5 },
+  { "id": "T-132", "story": "EP06-US06", "name": "Clasificación de perfiles como potenciales estudiantes", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 6 },
+  { "id": "T-133", "story": "EP06-US06", "name": "Interfaz admin con perfiles y características", "sprint": 8, "lane": "backlog", "type": "funcional", "days": 6 }
+]

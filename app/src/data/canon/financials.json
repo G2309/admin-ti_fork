@@ -1,0 +1,23 @@
+{
+  "burnRateClient": 72308,
+  "burnRateInternal": 67808,
+  "burnRateDaily": 3615.4,
+  "tmar": 0.35,
+  "tmarComponents": { "inflation": 0.05, "riskPremium": 0.10, "expectedReturn": 0.20 },
+  "roi": 0.5385,
+  "roiAdverse": 0.2426,
+  "marginEntry": 0.35,
+  "marginGrossInverse": 0.35,
+  "reserve": 124342.20,
+  "additionalCosts6m": 105870,
+  "additionalCosts12m": 160740,
+  "scrum":       { "team": 302454,    "investment": 532666.20,  "price": 819486.46,  "priceRounded": 820000,  "roi": 0.5385 },
+  "kanban":      { "team": 739332,    "investment": 1024414.20, "price": 1576021.85, "priceRounded": 1577000, "roi": 0.5385 },
+  "scrumban":    { "team": 302454,    "investment": 532666.20,  "price": 819486.46,  "priceRounded": 820000,  "roi": 0.5385 },
+  "scrumbanXp":  { "team": 289232,    "investment": 519444.20,  "price": 799144.92,  "priceRounded": 800000,  "roi": 0.5385, "selected": true },
+  "payments": [
+    { "phase": "Inicio", "pct": 30, "amount": 240000 },
+    { "phase": "Medio",  "pct": 40, "amount": 320000 },
+    { "phase": "Cierre", "pct": 30, "amount": 240000 }
+  ]
+}

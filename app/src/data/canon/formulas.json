@@ -1,0 +1,56 @@
+{
+  "burnRate": {
+    "expr": "Σ (Salario × FTE)",
+    "inputs": "salarios × dedicación FTE",
+    "source": "Gestión Financiera · UVG",
+    "interpretation": "Costo mensual sostenible del equipo asignado al proyecto."
+  },
+  "precio": {
+    "expr": "Precio = Costo / (1 − margen)",
+    "inputs": "costo interno · margen objetivo",
+    "source": "Fórmula universal del docente",
+    "interpretation": "Convierte costo a precio cliente preservando el margen objetivo."
+  },
+  "emv": {
+    "expr": "EMV = Probabilidad × Impacto",
+    "inputs": "P ∈ {0.20, 0.40, 0.70} · Impacto en Q",
+    "source": "PMBOK · Gestión de Riesgos",
+    "interpretation": "Valor monetario esperado de un riesgo cuantificado."
+  },
+  "reserva": {
+    "expr": "Reserva = Σ EMV",
+    "inputs": "9 riesgos del catálogo",
+    "source": "PMI · Contingency Reserve",
+    "interpretation": "Reserva total para cubrir los riesgos cuantificados."
+  },
+  "budget": {
+    "expr": "Presupuesto = Base + Reserva",
+    "inputs": "Base Scrum + Reserva de contingencia",
+    "source": "PMBOK · Cost Baseline",
+    "interpretation": "Cifra única defendible para el cliente."
+  },
+  "roi": {
+    "expr": "ROI = (Beneficio / Inversión) × 100",
+    "inputs": "beneficio · inversión total",
+    "source": "Gestión Financiera · ROI > TMAR",
+    "interpretation": "Rentabilidad del proyecto frente a la rentabilidad mínima exigida."
+  },
+  "tmar": {
+    "expr": "TMAR = Inflación + Riesgo + Rendimiento",
+    "inputs": "5 % + 10 % + 20 %",
+    "source": "Gestión Financiera · UVG",
+    "interpretation": "Rentabilidad mínima exigida para aceptar el proyecto."
+  },
+  "cpi": {
+    "expr": "CPI = EV / AC",
+    "inputs": "Earned Value · Actual Cost",
+    "source": "EVM · PMI",
+    "interpretation": "Eficiencia de costo: ≥ 1 = en presupuesto."
+  },
+  "spi": {
+    "expr": "SPI = EV / PV",
+    "inputs": "Earned Value · Planned Value",
+    "source": "EVM · PMI",
+    "interpretation": "Eficiencia de cronograma: ≥ 1 = en plan."
+  }
+}

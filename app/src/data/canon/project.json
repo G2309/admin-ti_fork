@@ -1,0 +1,16 @@
+{
+  "name": "Sistema de Recomendación Vocacional UVG",
+  "client": "UVG Campus Central — Dirección de Admisiones",
+  "start": "10-mar-2026",
+  "executionStart": "1-ene-2027",
+  "end": "22-abr-2027",
+  "sprints": 8,
+  "storyPoints": 121,
+  "stories": 32,
+  "epics": 6,
+  "tasks": 133,
+  "team": 6,
+  "executors": 6,
+  "selectedMethodology": "scrumban-xp",
+  "selectedMethodologyName": "Scrumban + XP"
+}

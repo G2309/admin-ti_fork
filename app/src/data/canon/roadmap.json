@@ -1,0 +1,22 @@
+{
+  "milestones": [
+    { "id": "H1", "label": "Inicio de ejecución y registro operativo", "date": "2027-01-01", "sprint": 1 },
+    { "id": "H2", "label": "Perfil del aspirante completo", "date": "2027-01-28", "sprint": 2 },
+    { "id": "H3", "label": "Encuesta vocacional lista", "date": "2027-02-11", "sprint": 3 },
+    { "id": "H4", "label": "Catálogo de carreras operativo", "date": "2027-02-25", "sprint": 4 },
+    { "id": "H5", "label": "Motor de recomendación funcional", "date": "2027-03-11", "sprint": 5 },
+    { "id": "H6", "label": "Afinidad y umbrales calibrados", "date": "2027-03-25", "sprint": 6 },
+    { "id": "H7", "label": "Panel inicial entregado", "date": "2027-04-08", "sprint": 7 },
+    { "id": "H8", "label": "Entrega final y aceptación del MVP", "date": "2027-04-22", "sprint": 8 }
+  ],
+  "sprintPlan": [
+    { "sprint": 1, "focus": "Registro y perfil del aspirante", "epics": ["EP01"], "sp": 13, "stories": 4, "tasks": 20, "dates": "1 ene – 14 ene 2027", "start": "2027-01-01", "end": "2027-01-14", "milestone": "H1" },
+    { "sprint": 2, "focus": "Validaciones y acceso a la encuesta", "epics": ["EP01", "EP02"], "sp": 15, "stories": 5, "tasks": 22, "dates": "15 ene – 28 ene 2027", "start": "2027-01-15", "end": "2027-01-28", "milestone": "H2" },
+    { "sprint": 3, "focus": "Encuesta completa y carreras base", "epics": ["EP02", "EP03"], "sp": 16, "stories": 5, "tasks": 24, "dates": "29 ene – 11 feb 2027", "start": "2027-01-29", "end": "2027-02-11", "milestone": "H3" },
+    { "sprint": 4, "focus": "Carreras avanzadas y robustez", "epics": ["EP03"], "sp": 13, "stories": 5, "tasks": 20, "dates": "12 feb – 25 feb 2027", "start": "2027-02-12", "end": "2027-02-25", "milestone": "H4" },
+    { "sprint": 5, "focus": "Motor de recomendación", "epics": ["EP04"], "sp": 16, "stories": 3, "tasks": 10, "dates": "26 feb – 11 mar 2027", "start": "2027-02-26", "end": "2027-03-11", "milestone": "H5" },
+    { "sprint": 6, "focus": "Afinidad y validación de impacto", "epics": ["EP05"], "sp": 13, "stories": 2, "tasks": 6, "dates": "12 mar – 25 mar 2027", "start": "2027-03-12", "end": "2027-03-25", "milestone": "H6" },
+    { "sprint": 7, "focus": "Umbrales, historial y panel inicial", "epics": ["EP05", "EP06"], "sp": 16, "stories": 3, "tasks": 12, "dates": "26 mar – 8 abr 2027", "start": "2027-03-26", "end": "2027-04-08", "milestone": "H7" },
+    { "sprint": 8, "focus": "Panel de resultados, pruebas de usabilidad y entrega final", "epics": ["EP06"], "sp": 19, "stories": 5, "tasks": 19, "dates": "9 abr – 22 abr 2027", "start": "2027-04-09", "end": "2027-04-22", "milestone": "H8" }
+  ]
+}

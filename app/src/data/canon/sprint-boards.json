@@ -1,0 +1,38 @@
+{
+  "lanes": [
+    { "id": "backlog", "label": "Backlog", "wip": null },
+    { "id": "ready", "label": "Ready", "wip": 3 },
+    { "id": "progress", "label": "In Progress", "wip": 3 },
+    { "id": "review", "label": "Review", "wip": 3 },
+    { "id": "done", "label": "Done", "wip": null }
+  ],
+  "xpLanes": [
+    { "id": "pair", "label": "Pair" },
+    { "id": "tdd", "label": "TDD / Test" },
+    { "id": "refactor", "label": "Refactor" },
+    { "id": "review", "label": "Code Review" },
+    { "id": "release", "label": "Release" }
+  ],
+  "kanban": {
+    "columns": [
+      { "id": "backlog", "label": "Backlog", "wip": null, "color": "#A8A8A8" },
+      { "id": "todo", "label": "To Do", "wip": 8, "color": "#5BA3D9" },
+      { "id": "progress", "label": "In Progress", "wip": 4, "color": "#1E5F8A" },
+      { "id": "testing", "label": "Testing", "wip": 4, "color": "#F5A623" },
+      { "id": "codeReview", "label": "Code Review", "wip": 4, "color": "#D9534F" },
+      { "id": "review", "label": "Review", "wip": 2, "color": "#7B4EA6" },
+      { "id": "done", "label": "Done", "wip": null, "color": "#2EAA4A" }
+    ],
+    "statusLegend": [
+      { "id": "backlog", "label": "Backlog", "color": "#A8A8A8" },
+      { "id": "todo", "label": "To Do", "color": "#5BA3D9" },
+      { "id": "progress", "label": "In Progress", "color": "#1E5F8A" },
+      { "id": "testing", "label": "Testing", "color": "#F5A623" },
+      { "id": "codeReview", "label": "Code Review", "color": "#D9534F" },
+      { "id": "review", "label": "Review", "color": "#7B4EA6" },
+      { "id": "done", "label": "Done", "color": "#2EAA4A" },
+      { "id": "late", "label": "Atrasado", "color": "#B33030" },
+      { "id": "priority", "label": "Cambio de prioridad", "color": "#E8C428" }
+    ]
+  }
+}

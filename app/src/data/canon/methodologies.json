@@ -1,0 +1,82 @@
+{
+  "summary": [
+    { "id": "scrum",        "name": "Scrum",          "role": "Ejecución ágil clásica",     "base": 302454,    "investment": 532666.20,  "total": 820000,   "price": 819486.46,  "duration": "9 sprints · ~4.5 meses",  "team": 5, "margin": 0.35, "roi": 0.5385, "selected": false },
+    { "id": "kanban",       "name": "Kanban",         "role": "Operación continua",         "base": 739332,    "investment": 1024414.20, "total": 1577000,  "price": 1576021.85, "duration": "11 meses",                  "team": 5, "margin": 0.35, "roi": 0.5385, "selected": false },
+    { "id": "scrumban",     "name": "Scrumban",       "role": "Build + Run 80/20",          "base": 302454,    "investment": 532666.20,  "total": 820000,   "price": 819486.46,  "duration": "9 sprints · ~4.5 meses",  "team": 5, "margin": 0.35, "roi": 0.5385, "selected": false },
+    { "id": "scrumban-xp",  "name": "Scrumban + XP",  "role": "Híbrido elegido del proyecto","base": 289232,    "investment": 519444.20,  "total": 800000,   "price": 799144.92,  "duration": "8 sprints · ~4 meses",     "team": 6, "margin": 0.35, "roi": 0.5385, "selected": true }
+  ],
+  "layers": [
+    {
+      "id": "pmi",
+      "name": "PMI",
+      "role": "Marco integrador",
+      "scope": "10 áreas de conocimiento",
+      "duration": "transversal",
+      "cost": "no costea por sí mismo",
+      "sla": "Cost baseline + Earned Value",
+      "throughput": "n/a",
+      "risk": "EMV cuantitativa · reserva = ΣEMV",
+      "operation": "EVM · CPI/SPI · cost baseline"
+    },
+    {
+      "id": "wsf",
+      "name": "Water-Scrum-Fall",
+      "role": "Modelo macro",
+      "scope": "Contrato + Sprints + Cierre",
+      "duration": "8 sprints + cierre",
+      "cost": "fija etapas contractuales",
+      "sla": "Validation Gate por etapa",
+      "throughput": "ritmo de Scrumban interno",
+      "risk": "alineación contractual",
+      "operation": "etapas fijas con núcleo ágil"
+    },
+    {
+      "id": "scrum",
+      "name": "Scrum",
+      "role": "Ejecución ágil",
+      "scope": "3-5-3 · 9 sprints",
+      "duration": "9 sprints · 2 semanas",
+      "cost": "Q 820,000 (precio cliente)",
+      "sla": "DoD 7 criterios",
+      "throughput": "20 SP por sprint",
+      "risk": "absorbido por reserva",
+      "operation": "ceremonias formales · backlog priorizado"
+    },
+    {
+      "id": "kanban",
+      "name": "Kanban",
+      "role": "Operación continua",
+      "scope": "Flujo · WIP limitado",
+      "duration": "11 meses",
+      "cost": "Q 1,577,000 (operación anual)",
+      "sla": "Cycle Time 6.13 d",
+      "throughput": "0.78 tareas por día",
+      "risk": "saturación del flujo",
+      "operation": "WIP ≤ 3 por columna activa"
+    },
+    {
+      "id": "scrumban",
+      "name": "Scrumban",
+      "role": "Build + Run 80/20",
+      "scope": "Híbrido · entrega + operación",
+      "duration": "9 sprints + run",
+      "cost": "Q 820,000 (precio cliente)",
+      "sla": "DoD + WIP",
+      "throughput": "20 SP por sprint + operación",
+      "risk": "balance entre nuevo y mantenimiento",
+      "operation": "scrum core con kanban en run"
+    },
+    {
+      "id": "xp",
+      "name": "XP",
+      "role": "Capa técnica transversal",
+      "scope": "8 prácticas + 7 historias técnicas",
+      "duration": "transversal a 8 sprints",
+      "cost": "incluida en Scrumban + XP",
+      "sla": "Cobertura TDD ≥ 70 %",
+      "throughput": "holgura reducida a 10 %",
+      "risk": "deuda técnica controlada",
+      "operation": "Pair · TDD · Refactor · CI · Small Releases"
+    }
+  ]
+}

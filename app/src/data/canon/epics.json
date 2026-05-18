@@ -1,0 +1,8 @@
+[
+  { "id": "EP01", "name": "Registro y Perfiles de Usuarios", "stories": 6, "sp": 18, "tasks": 28, "taskDays": 126, "sprints": [1, 2], "color": "#4A90C4", "summary": "Cuentas, perfil académico, experiencias y resumen del aspirante." },
+  { "id": "EP02", "name": "Gestión de Encuesta Vocacional", "stories": 6, "sp": 20, "tasks": 28, "taskDays": 136, "sprints": [2, 3], "color": "#2EAA8A", "summary": "Encuesta adaptativa, navegación, guardado automático y envío definitivo." },
+  { "id": "EP03", "name": "Gestión de Carreras y Relaciones", "stories": 7, "sp": 19, "tasks": 30, "taskDays": 140, "sprints": [3, 4], "color": "#9B72C0", "summary": "Catálogo de carreras UVG, áreas de conocimiento, habilidades e intereses." },
+  { "id": "EP04", "name": "Motor de Recomendación", "stories": 3, "sp": 16, "tasks": 10, "taskDays": 67, "sprints": [5], "color": "#1E5F7A", "summary": "Algoritmo de comparación perfil-carrera y validación de perfil mínimo." },
+  { "id": "EP05", "name": "Análisis de Sentimientos y Relaciones", "stories": 4, "sp": 26, "tasks": 15, "taskDays": 88, "sprints": [6, 7], "color": "#D4922A", "summary": "Cálculo de afinidad, umbrales configurables e historial." },
+  { "id": "EP06", "name": "Panel de Resultados", "stories": 6, "sp": 22, "tasks": 22, "taskDays": 125, "sprints": [7, 8], "color": "#7A7A7A", "summary": "Listado de recomendaciones, detalle de carrera, métricas y perfiles." }
+]

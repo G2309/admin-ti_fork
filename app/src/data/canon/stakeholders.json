@@ -1,0 +1,42 @@
+[
+  {
+    "id": "client",
+    "label": "Cliente",
+    "audience": "UVG Admisiones · Comité directivo",
+    "headline": "Presupuesto recomendado",
+    "headlineValue": 692451.63,
+    "headlineFormat": "q",
+    "burnRate": 87375.6,
+    "pitch": "Cifra única defendible: base más reserva. Pagos 30/40/30 y proyecto en ruta."
+  },
+  {
+    "id": "sponsor",
+    "label": "Sponsor / Inversor",
+    "audience": "Decisor financiero UVG",
+    "headline": "Rentabilidad",
+    "headlineValue": 0.4468,
+    "headlineFormat": "pct",
+    "burnRate": 87375.6,
+    "pitch": "Rentabilidad por encima de la mínima exigida incluso en escenario adverso."
+  },
+  {
+    "id": "internal",
+    "label": "Operativo interno",
+    "audience": "Equipo del proyecto",
+    "headline": "Base interna",
+    "headlineValue": 495268.02,
+    "headlineFormat": "q",
+    "burnRate": 81525.6,
+    "pitch": "Capacidad real del equipo con Product Owner al 70 % y cuatro ejecutores."
+  },
+  {
+    "id": "pm",
+    "label": "PM · Académico",
+    "audience": "Profesor · Tribunal",
+    "headline": "Reserva de contingencia",
+    "headlineValue": 161644.86,
+    "headlineFormat": "q",
+    "burnRate": 87375.6,
+    "pitch": "PMBOK aplicado: 9 riesgos cuantificados, reserva igual a la suma de su valor esperado."
+  }
+]

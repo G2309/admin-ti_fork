@@ -1,0 +1,20 @@
+{
+  "cycleTimeDays": 6.13,
+  "throughputPerDay": 0.78,
+  "wipPerLane": 3,
+  "sprintLengthDays": 14,
+  "velocitySpPerSprint": 20,
+  "definitionOfDoneCriteria": 7,
+  "ceremonies": [
+    { "name": "Sprint Planning", "cadence": "Inicio de sprint", "duration": "2 h" },
+    { "name": "Daily", "cadence": "Diario", "duration": "15 min" },
+    { "name": "Refinement", "cadence": "Una vez por sprint", "duration": "1 h" },
+    { "name": "Review", "cadence": "Fin de sprint", "duration": "1.5 h" },
+    { "name": "Retrospective", "cadence": "Fin de sprint", "duration": "1 h" }
+  ],
+  "slaTargets": [
+    { "key": "Latencia API", "target": "≤ 300 ms p95" },
+    { "key": "Disponibilidad", "target": "≥ 99.5 %" },
+    { "key": "Cobertura TDD", "target": "≥ 70 %" }
+  ]
+}

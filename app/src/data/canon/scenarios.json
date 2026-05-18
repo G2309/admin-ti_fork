@@ -1,0 +1,41 @@
+{
+  "official": {
+    "id": "official",
+    "label": "Oficial · Scrumban + XP",
+    "inputs": {
+      "salaries": {
+        "PM": 15000,
+        "TechLead": 13500,
+        "DevSenior": 12904,
+        "DevJunior": 12904,
+        "PO": 18000
+      },
+      "fte": {
+        "PM": 1.0,
+        "TechLead": 1.0,
+        "DevSenior": 1.0,
+        "DevJunior": 1.0,
+        "PO": 1.0
+      },
+      "alpha": 0.0,
+      "marginScrum": 0.35,
+      "tmar": 0.35,
+      "sprintLengthDays": 10,
+      "sprints": 8,
+      "reserve": 124342.20,
+      "xpEnabled": true,
+      "refactorOverheadPct": 0
+    },
+    "expected": {
+      "burnRateClient": 72308,
+      "scrumBase": 289232,
+      "scrumTotal": 519444.20,
+      "roi": 0.5385
+    }
+  },
+  "examples": [
+    { "id": "no-xp",     "label": "Sin XP",        "patch": { "xpEnabled": false } },
+    { "id": "po-07",     "label": "PO al 70 %",    "patch": { "fte.PO": 0.7 } },
+    { "id": "margen-40", "label": "Margen 40 %",   "patch": { "marginScrum": 0.40 } }
+  ]
+}
