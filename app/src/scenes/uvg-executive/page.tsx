@@ -6,10 +6,10 @@ import { project, financials, epics, methodologies, additionalCosts, fmtQ, fmtPc
 import { appConfig, cardVisible } from '@/lib/env'
 
 const teamByRole = [
-  { role: 'Líder del proyecto', count: 1, focus: 'Refinamiento del backlog, priorización, validación de entregables y coaching técnico XP.' },
-  { role: 'Coordninador', count: 1, focus: 'Facilitación de ceremonias, gestión de impedimentos y trazabilidad de pruebas (TDD).' },
-  { role: 'Programador Senior', count: 2, focus: 'Arquitectura, integraciones y pair programming con programadores junior.' },
-  { role: 'Programador Junior', count: 2, focus: 'Implementación de historias bajo pair programming y prácticas XP.' },
+  { role: 'Líder del proyecto', count: 1, focus: 'Define qué se construye primero, revisa que los resultados estén bien hechos y orienta al equipo técnicamente.' },
+  { role: 'Coordninador', count: 1, focus: 'Organiza las reuniones del equipo, elimina los problemas que frenan el trabajo y lleva el registro de las pruebas.' },
+  { role: 'Programador Senior', count: 2, focus: 'Diseña cómo va a estar organizado el sistema por dentro y enseña a los programadores menos experimentados trabajando codo a codo con ellos.' },
+  { role: 'Programador Junior', count: 2, focus: 'Construye las funcionalidades del sistema siguiendo las instrucciones del equipo, siempre acompañado por alguien más experimentado.' },
 ] as const
 
 const monthMap: Record<string, string> = {
