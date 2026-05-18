@@ -22,28 +22,6 @@ const priorityTone = {
   Baja: 'border-emerald-500/40 text-emerald-700 dark:text-emerald-300 bg-emerald-500/10',
 } as const
 
-const inScopeEpics = [
-  { id: 'EP01', name: 'Registro y perfiles', desc: 'Creación de cuenta, autenticación y gestión del perfil del aspirante.' },
-  { id: 'EP02', name: 'Encuesta vocacional', desc: 'Formulario interactivo de intereses académicos y preferencias vocacionales.' },
-  { id: 'EP03', name: 'Carreras y pensum 2026', desc: 'Catálogo digital de pregrado UVG Campus Central validado por Admisiones.' },
-  { id: 'EP04', name: 'Motor de recomendación', desc: 'Algoritmo de afinidad que genera un ranking de compatibilidad por carrera.' },
-  { id: 'EP05', name: 'Análisis de afinidad', desc: 'Clasifica resultados en categorías comprensibles: alta, media y baja afinidad.' },
-  { id: 'EP06', name: 'Panel de resultados', desc: 'Interfaz con el ranking de carreras recomendadas e información de apoyo.' },
-]
-
-const outOfScope = [
-  { icon: 'link-off', text: 'Integración con ERP o sistema de admisiones de UVG' },
-  { icon: 'user-heart', text: 'Orientación psicológica o asesoría por profesional humano' },
-  { icon: 'chart-line', text: 'Seguimiento del desempeño académico post-admisión' },
-  { icon: 'building', text: 'Cobertura de otros campus o sedes de UVG' },
-  { icon: 'device-mobile-off', text: 'Aplicación móvil nativa (iOS / Android)' },
-  { icon: 'lock', text: 'SSO institucional o integración con Active Directory' },
-  { icon: 'school-off', text: 'Postgrados, técnicos o programas fuera del pensum 2026' },
-  { icon: 'report-off', text: 'Módulo de reportes estadísticos para Dirección de Admisiones' },
-  { icon: 'settings-off', text: 'Personalización del motor sin asistencia del equipo técnico' },
-  { icon: 'calendar-off', text: 'Soporte o mantenimiento post-cierre del contrato 2026–2027' },
-]
-
 function LayerCard({ title, items }: { title: string; items: readonly { key: string; desc: string; icon: React.ElementType; accent: string }[] }) {
   return (
     <Card>
@@ -70,65 +48,6 @@ function LayerCard({ title, items }: { title: string; items: readonly { key: str
   )
 }
 
-function ScopeSection() {
-  return (
-    <div className="space-y-4">
-      {/* En alcance */}
-      <Card>
-        <CardHeader className="pb-3">
-          <CardTitle className="text-base flex items-center gap-2">
-            <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            </span>
-            En alcance
-          </CardTitle>
-          <p className="text-xs text-muted-foreground">6 épicas · 32 historias de usuario · 121 story points · 133 tareas</p>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {inScopeEpics.map((ep) => (
-              <div key={ep.id} className="flex items-start gap-3 rounded-lg border border-border bg-card p-3">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-emerald-500/10 text-[11px] font-mono font-semibold text-emerald-700 dark:text-emerald-300">
-                  {ep.id}
-                </div>
-                <div className="min-w-0">
-                  <p className="text-sm font-medium leading-tight">{ep.name}</p>
-                  <p className="mt-1 text-xs text-muted-foreground leading-snug">{ep.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Fuera de alcance */}
-      <Card>
-        <CardHeader className="pb-3">
-          <CardTitle className="text-base flex items-center gap-2">
-            <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-red-500/15 text-red-700 dark:text-red-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-            </span>
-            Fuera de alcance
-          </CardTitle>
-          <p className="text-xs text-muted-foreground">El sistema informa y recomienda, pero no ejecuta acciones institucionales ni extiende su cobertura más allá del MVP.</p>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {outOfScope.map((item) => (
-              <div key={item.text} className="flex items-start gap-3 rounded-lg border border-border bg-card p-3">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-500/10 text-red-700 dark:text-red-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                </div>
-                <p className="text-sm text-muted-foreground leading-snug pt-1">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  )
-}
-
 export function UvgMethodologyScene() {
   const showComparison = cardVisible('methodology.comparison')
   const showKanban = cardVisible('methodology.kanban')
@@ -142,8 +61,6 @@ export function UvgMethodologyScene() {
           Enfoque tradicional integrador (PMI y Water-Scrum-Fall) sobre un núcleo ágil. Metodología elegida: Scrumban + XP.
         </p>
       </header>
-
-      <ScopeSection />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <LayerCard title="Enfoque tradicional · marco integrador" items={traditionalLayers} />
