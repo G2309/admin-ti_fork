@@ -44,14 +44,14 @@ export const kanbanBoard = boardsJson.kanban
 export const sprintPlan = roadmapJson.sprintPlan
 
 export const evmPlan = [
-  { sprint: 'S1', pv: 86000.00 },
-  { sprint: 'S2', pv: 184000.00 },
-  { sprint: 'S3', pv: 290000.00 },
-  { sprint: 'S4', pv: 396000.00 },
-  { sprint: 'S5', pv: 502000.00 },
-  { sprint: 'S6', pv: 608000.00 },
-  { sprint: 'S7', pv: 706000.00 },
-  { sprint: 'S8', pv: 800000.00 },
+  { sprint: 'S1', pv: 87500.00 },
+  { sprint: 'S2', pv: 187220.00 },
+  { sprint: 'S3', pv: 295080.00 },
+  { sprint: 'S4', pv: 402940.00 },
+  { sprint: 'S5', pv: 510800.00 },
+  { sprint: 'S6', pv: 618660.00 },
+  { sprint: 'S7', pv: 718360.00 },
+  { sprint: 'S8', pv: 814000.00 },
 ] as const
 
 export const additionalCosts = {
@@ -94,17 +94,17 @@ export const xpScenario = {
   tasksWithoutXp: 682,
   tasksWithXp: 815,
   overheadPct: 0.195,
-  investment: 519444.20,
-  priceClient: 799144.92,
-  priceRounded: 800000,
+  investment: 528871.80,
+  priceClient: 813648.92,
+  priceRounded: 814000,
   roi: 0.5385,
   note: 'Metodología elegida del proyecto: Scrumban + XP. Combina BID/ROM 80/20 con las 8 prácticas XP y 7 historias técnicas (HT-01–HT-07). La holgura se reduce a 10 % gracias a TDD, CI y pair programming.',
 } as const
 
 export const reserveTraceability = {
   original: { value: 135432.18, risks: 7, label: 'Versión inicial · 7 riesgos' },
-  current: { value: 124342.20, risks: 9, label: 'Versión vigente · 9 riesgos (Σ EMV)' },
-  reason: 'Recalibración con burn rate base académico Q 67,212 (sin alpha) e impactos en meses según la matriz consolidada del Excel UVG-Admon-TI-Costos-Unificado.xlsx. El equipo Scrumban + XP opera a Q 72,308/mes pero la matriz de riesgos se mantiene sobre la base académica de 5 personas para consistencia con el curso.',
+  current: { value: 133769.80, risks: 9, label: 'Versión vigente · 9 riesgos (Σ EMV)' },
+  reason: 'La reserva (Σ EMV) se monetiza con el burn rate del equipo XP + Scrumban Q 72,308/mes (6 personas cliente). Los impactos de los 9 riesgos se calculan como burn_rate × meses_impacto; la suma de los valores monetarios esperados arroja Q 133,769.80. Esta reserva se aplica por igual a todas las metodologías del comparativo.',
 } as const
 
 export const xpPractices = [

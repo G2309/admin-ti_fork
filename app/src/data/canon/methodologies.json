@@ -3,7 +3,7 @@
     { "id": "scrum",        "name": "Scrum",          "role": "Ejecución ágil clásica",     "base": 302454,    "investment": 532666.20,  "total": 820000,   "price": 819486.46,  "duration": "9 sprints · ~4.5 meses",  "team": 5, "margin": 0.35, "roi": 0.5385, "selected": false },
     { "id": "kanban",       "name": "Kanban",         "role": "Operación continua",         "base": 739332,    "investment": 1024414.20, "total": 1577000,  "price": 1576021.85, "duration": "11 meses",                  "team": 5, "margin": 0.35, "roi": 0.5385, "selected": false },
     { "id": "scrumban",     "name": "Scrumban",       "role": "Build + Run 80/20",          "base": 302454,    "investment": 532666.20,  "total": 820000,   "price": 819486.46,  "duration": "9 sprints · ~4.5 meses",  "team": 5, "margin": 0.35, "roi": 0.5385, "selected": false },
-    { "id": "scrumban-xp",  "name": "Scrumban + XP",  "role": "Híbrido elegido del proyecto","base": 289232,    "investment": 519444.20,  "total": 800000,   "price": 799144.92,  "duration": "8 sprints · ~4 meses",     "team": 6, "margin": 0.35, "roi": 0.5385, "selected": true }
+    { "id": "scrumban-xp",  "name": "Scrumban + XP",  "role": "Híbrido elegido del proyecto","base": 289232,    "investment": 528871.80,  "total": 814000,   "price": 813648.92,  "duration": "8 sprints · ~4 meses",     "team": 6, "margin": 0.35, "roi": 0.5385, "selected": true }
   ],
   "layers": [
     {

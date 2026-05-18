@@ -278,9 +278,9 @@ export function UvgExecutiveScene() {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               {[
-                { phase: 'Anticipo', pct: 30, amount: 240000, milestone: 'Firma de contrato · arranque Sprint 1', date: '1 de enero de 2027', anchor: 'Inicio' },
-                { phase: 'Avance', pct: 40, amount: 320000, milestone: 'Cierre Sprint 4 · punto medio del proyecto', date: '25 de febrero de 2027', anchor: 'Medio' },
-                { phase: 'Cierre', pct: 30, amount: 240000, milestone: 'Entrega del MVP · Acta de Cierre (cierre Sprint 8)', date: '22 de abril de 2027', anchor: 'Final' },
+                { phase: 'Anticipo', pct: 30, amount: 244200, milestone: 'Firma de contrato · arranque Sprint 1', date: '1 de enero de 2027', anchor: 'Inicio' },
+                { phase: 'Avance', pct: 40, amount: 325600, milestone: 'Cierre Sprint 4 · punto medio del proyecto', date: '25 de febrero de 2027', anchor: 'Medio' },
+                { phase: 'Cierre', pct: 30, amount: 244200, milestone: 'Entrega del MVP · Acta de Cierre (cierre Sprint 8)', date: '22 de abril de 2027', anchor: 'Final' },
               ].map((p) => (
                 <div key={p.phase} className="rounded-lg border border-border bg-card/60 p-4 space-y-2">
                   <div className="flex items-baseline justify-between gap-2">

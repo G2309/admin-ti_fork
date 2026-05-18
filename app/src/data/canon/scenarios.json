@@ -22,14 +22,14 @@
       "tmar": 0.35,
       "sprintLengthDays": 10,
       "sprints": 8,
-      "reserve": 124342.20,
+      "reserve": 133769.80,
       "xpEnabled": true,
       "refactorOverheadPct": 0
     },
     "expected": {
       "burnRateClient": 72308,
       "scrumBase": 289232,
-      "scrumTotal": 519444.20,
+      "scrumTotal": 528871.80,
       "roi": 0.5385
     }
   },

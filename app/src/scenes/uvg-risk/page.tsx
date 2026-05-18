@@ -8,10 +8,10 @@ import { cardVisible, isFullExplain } from '@/lib/env'
 const probLabels = { 0.2: 'Baja', 0.4: 'Media', 0.7: 'Alta' } as const
 const probRows = [0.7, 0.4, 0.2] as const
 const impactCols = [
-  { key: 'low', label: 'Bajo', range: (i: number) => i < 33606 },
-  { key: 'med', label: 'Medio', range: (i: number) => i >= 33606 && i < 67808 },
-  { key: 'high', label: 'Alto', range: (i: number) => i >= 67808 && i < 100818 },
-  { key: 'crit', label: 'Crítico', range: (i: number) => i >= 100818 },
+  { key: 'low', label: 'Bajo', range: (i: number) => i < 36154 },
+  { key: 'med', label: 'Medio', range: (i: number) => i >= 36154 && i < 72308 },
+  { key: 'high', label: 'Alto', range: (i: number) => i >= 72308 && i < 108462 },
+  { key: 'crit', label: 'Crítico', range: (i: number) => i >= 108462 },
 ] as const
 
 function cellRisks(p: number, predicate: (i: number) => boolean) {

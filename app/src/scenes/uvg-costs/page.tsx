@@ -471,8 +471,8 @@ export function UvgCostsScene() {
             </CardHeader>
             <CardContent>
               {(() => {
-                const client = { label: 'Cliente', badge: 'PO 1.0 FTE', color: '#10b981', burnRate: 72308, costPerSprint: 36154, teamCostBuffer: 289232, investment: 519444.20, priceRounded: 800000, benefit: 279700.72 }
-                const internal = { label: 'Interno', badge: 'PO 0.7 FTE', color: '#0ea5e9', burnRate: 67808, costPerSprint: 33904, teamCostBuffer: 271232, investment: 501444.20, priceRounded: 772000, benefit: 270008.42 }
+                const client = { label: 'Cliente', badge: 'PO 1.0 FTE', color: '#10b981', burnRate: 72308, costPerSprint: 36154, teamCostBuffer: 289232, investment: 528871.80, priceRounded: 814000, benefit: 285128.20 }
+                const internal = { label: 'Interno', badge: 'PO 0.7 FTE', color: '#0ea5e9', burnRate: 67808, costPerSprint: 33904, teamCostBuffer: 271232, investment: 510871.80, priceRounded: 786000, benefit: 275128.20 }
                 const metrics = [
                   { key: 'burnRate', label: 'Burn rate mensual', help: 'Sueldos del equipo por mes' },
                   { key: 'costPerSprint', label: 'Costo por sprint', help: 'Burn rate × (días sprint / días mes)' },

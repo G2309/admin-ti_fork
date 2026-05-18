@@ -55,10 +55,10 @@ const DEFAULTS: FinancialInputs = {
 // Constantes congeladas del proyecto (no editables — vienen del Excel)
 const TOTAL_SP = 121
 const TOTAL_EPICS = 6
-const SPRINT_DAYS = 10        // duración atómica de un sprint
-const MONTH_DAYS = 20         // días laborales por mes
+const SPRINT_DAYS = 10        // días hábiles por sprint (= 2 semanas calendario)
+const MONTH_DAYS = 20         // días hábiles por mes
 const ADDITIONAL_COSTS_6M = 105870
-const RESERVE_FROZEN = 124342.20  // Σ EMV de 9 riesgos · base académica Q 67,212
+const RESERVE_FROZEN = 133769.80  // Σ EMV de 9 riesgos · constante del proyecto (base Q 72,308)
 
 function NumberField({ id, label, value, onChange, step, suffix, min, max, ariaLabel, readOnly, hint }: { id: string; label: string; value: number; onChange?: (n: number) => void; step?: number; suffix?: string; min?: number; max?: number; ariaLabel?: string; readOnly?: boolean; hint?: string }) {
   // Estado string interno: permite que el input quede vacío mientras se edita
@@ -233,8 +233,8 @@ export function UvgFinancialScene() {
     const velocity = Math.floor(TOTAL_SP / TOTAL_EPICS)              // 20 SP/sprint
     const sprintsNeeded = Math.ceil(TOTAL_SP / velocity)             // 7 sprints
     const sprintsWithBuffer = Math.ceil(sprintsNeeded * (1 + v.bufferPct))  // 8 sprints
-    const durationDays = sprintsNeeded * SPRINT_DAYS                 // 70 días
-    const durationDaysWithBuffer = sprintsWithBuffer * SPRINT_DAYS   // 80 días
+    const durationDays = sprintsNeeded * SPRINT_DAYS                 // 70 días hábiles
+    const durationDaysWithBuffer = sprintsWithBuffer * SPRINT_DAYS   // 80 días hábiles ≈ 16 semanas calendario
 
     // Costos por sprint y equipo
     const costPerSprint = burnRateClient * (SPRINT_DAYS / MONTH_DAYS)
@@ -248,9 +248,9 @@ export function UvgFinancialScene() {
     // Inversión total
     const investment = teamCost + ADDITIONAL_COSTS_6M + RESERVE_FROZEN
 
-    // Precio cliente (patrón curso: Inversión / (1 − margen), redondeo CEILING a 10 000)
+    // Precio cliente (patrón curso: Inversión / (1 − margen), redondeo CEILING a 1 000)
     const exactPrice = v.marginPct < 1 ? investment / (1 - v.marginPct) : investment
-    const roundedPrice = Math.ceil(exactPrice / 10000) * 10000
+    const roundedPrice = Math.ceil(exactPrice / 1000) * 1000
     const roundingDelta = roundedPrice - exactPrice
     const effectiveMargin = roundedPrice > 0 ? (roundedPrice - investment) / roundedPrice : 0
 
@@ -450,8 +450,8 @@ export function UvgFinancialScene() {
                 <ReadOnlyField id="c-stories" label="Historias" value="32" />
                 <ReadOnlyField id="c-sp" label="Story points" value={String(TOTAL_SP)} />
                 <ReadOnlyField id="c-tasks" label="Tareas" value="133" />
-                <ReadOnlyField id="c-sprint-days" label="Días por sprint" value={String(SPRINT_DAYS)} />
-                <ReadOnlyField id="c-month-days" label="Días laborales / mes" value={String(MONTH_DAYS)} />
+                <ReadOnlyField id="c-sprint-days" label="Días hábiles por sprint" value={String(SPRINT_DAYS)} />
+                <ReadOnlyField id="c-month-days" label="Días hábiles / mes" value={String(MONTH_DAYS)} />
                 <ReadOnlyField id="c-additionals" label="Adicionales (6 meses)" value={fmtQ(ADDITIONAL_COSTS_6M)} />
                 <ReadOnlyField id="c-reserve" label="Reserva (Σ EMV)" value={fmtQ(RESERVE_FROZEN)} />
               </div>
@@ -494,7 +494,7 @@ export function UvgFinancialScene() {
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                 <ReadOnlyField id="d-investment" label="Inversión total" value={fmtQ(calc.investment)} hint="equipo + adicionales + reserva" />
                 <ReadOnlyField id="d-price-exact" label="Precio cliente (exacto)" value={fmtQ(calc.exactPrice)} hint="inversión ÷ (1 − margen)" />
-                <ReadOnlyField id="d-price-rounded" label="Precio cliente redondeado" value={fmtQ(calc.roundedPrice)} hint="CEILING(precio, 10 000)" />
+                <ReadOnlyField id="d-price-rounded" label="Precio cliente redondeado" value={fmtQ(calc.roundedPrice)} hint="CEILING(precio, 1 000)" />
                 <ReadOnlyField
                   id="d-benefit"
                   label="Beneficio neto"
