@@ -34,16 +34,16 @@ const inScopeEpics = [
 ]
 
 const outOfScope = [
-  { icon: 'link-off', text: 'Integración con ERP o sistema de admisiones de UVG' },
-  { icon: 'user-heart', text: 'Orientación psicológica o asesoría por profesional humano' },
-  { icon: 'chart-line', text: 'Seguimiento del desempeño académico post-admisión' },
-  { icon: 'building', text: 'Cobertura de otros campus o sedes de UVG' },
-  { icon: 'device-mobile-off', text: 'Aplicación móvil nativa (iOS / Android)' },
-  { icon: 'lock', text: 'SSO institucional o integración con Active Directory' },
-  { icon: 'school-off', text: 'Postgrados, técnicos o programas fuera del pensum 2026' },
-  { icon: 'report-off', text: 'Módulo de reportes estadísticos para Dirección de Admisiones' },
-  { icon: 'settings-off', text: 'Personalización del motor sin asistencia del equipo técnico' },
-  { icon: 'calendar-off', text: 'Soporte o mantenimiento post-cierre del contrato 2026–2027' },
+  { text: 'Integración con ERP o sistema de admisiones de UVG' },
+  { text: 'Orientación psicológica o asesoría por profesional humano' },
+  { text: 'Seguimiento del desempeño académico post-admisión' },
+  { text: 'Cobertura de otros campus o sedes de UVG' },
+  { text: 'Aplicación móvil nativa (iOS / Android)' },
+  { text: 'SSO institucional o integración con Active Directory' },
+  { text: 'Postgrados, técnicos o programas fuera del pensum 2026' },
+  { text: 'Módulo de reportes estadísticos para Dirección de Admisiones' },
+  { text: 'Personalización del motor sin asistencia del equipo técnico' },
+  { text: 'Soporte o mantenimiento post-cierre del contrato 2026–2027' },
 ]
 
 function LayerCard({ title, items }: { title: string; items: readonly { key: string; desc: string; icon: React.ElementType; accent: string }[] }) {
@@ -174,6 +174,8 @@ export function UvgWbsScene() {
         </div>
       </div>
 
+      <ScopeSection />
+
       <Card>
         <CardContent className="overflow-x-auto pt-6">
           <div className="min-w-[1100px] py-4">
@@ -286,8 +288,6 @@ export function UvgMethodologyScene() {
           Enfoque tradicional integrador (PMI y Water-Scrum-Fall) sobre un núcleo ágil. Metodología elegida: Scrumban + XP.
         </p>
       </header>
-
-      <ScopeSection />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <LayerCard title="Enfoque tradicional · marco integrador" items={traditionalLayers} />
